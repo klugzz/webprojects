@@ -1,0 +1,24 @@
+<html>
+<body>
+<center>
+<h1>BANK INFORMATION</h1>
+{% if b%}
+<table border=5px;><thead>
+<th>ACNO</th>
+<th>NAME</th>
+<th>DEPAMNT</th>
+<th>BAL</th></thead>
+{%% for x in b%}
+<tr>
+<td>{{x.acno}}</td>
+<td>{{x.name}}</td>
+<td>{{x.depamnt}}</td>
+<td>{{x.bal}}</td>
+</tr>
+{% endfor %}</table>
+{% else %}
+<p> NO RECORDS FOUND</p>
+{% endif %}
+</center>
+</body>
+</html>
